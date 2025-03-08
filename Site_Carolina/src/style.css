@@ -152,6 +152,14 @@ a:active{
     margin-bottom: 20px;
 }
 
+quiz-container{
+    width: 250px; 
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+    
+}
+//Botão de retorno
 #Retornar{
     text-decoration: none;
     background: linear-gradient(to right, rgba(255, 10, 200, 0.7), rgba(168, 31, 148, 0.8), rgba(178, 6, 184));
@@ -161,3 +169,5 @@ a:active{
     margin-top: 25px;   
     padding: 1vw;
 }
+
+
