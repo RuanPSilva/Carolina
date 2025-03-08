@@ -51,6 +51,12 @@ function checkAnswer(selected) {
         if (currentQuestion < quizData.length) {
             loadQuestion();
         } else {
+             document.getElementById("quiz-container").innerHTML = '<h2>Parabéns, Carolina! 🎉</h2><p>Você completou o quiz!</p></div>';
+            const finalGif = document.createElement("img");
+            finalGif.src = "./Site_Carolina/src/video/Flor.gif";  // Substitua com o GIF de sua escolha
+            finalGif.id = "final-gif";  // Estilo do GIF de finalização
+            document.getElementById("quiz-container").prepend(finalGif); // Insere o GIF no início da div
+            
             // Adicionando o botão de retorno para a página Init.html
             const returnButton = document.createElement("button");
             returnButton.textContent = "Voltar para o Início";
