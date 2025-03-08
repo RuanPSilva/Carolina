@@ -42,7 +42,7 @@ function checkAnswer(selected) {
 
     if (questionData.allCorrect) {
         // Para a última pergunta, todas as alternativas são corretas
-        document.getElementById("quiz-container").innerHTML = '<h2>Você acertou, todas as respostas estão corretas! 🎉</h2><p>🐈O Gatinho te entrega flores, porque vc é minha Abelinha que ama florzinhas!🐝</p>';
+        document.getElementById("quiz-container").innerHTML = '<h2>Você acertou, todas as respostas estão corretas! Meus parabens amor! Clique no botão retornar no seu celular 🎉</h2><p>🐈O Gatinho te entrega flores, porque vc é minha Abelinha que ama florzinhas!🐝</p>';
         const finalGif = document.createElement("img");
         finalGif.src = "./Site_Carolina/src/video/Flor.gif;  // Inserindo o Gif
         finalGif.id = "final-gif";  // Estilo do GIF de finalização
@@ -53,7 +53,7 @@ function checkAnswer(selected) {
             loadQuestion();
         } else {
             document.getElementById("quiz-container").innerHTML = '<h2>Parabéns, Carolina! 🎉</h2><p>Você completou o quiz!</p></div>';
-            const finalGif = document.createElement("img");
+            const finalGif = document.createElement("gif");
             finalGif.src = "./Site_Carolina/src/img/final.png";  // Substitua com img 
             finalGif.id = "final-gif";  // Estilo do GIF de finalização
             document.getElementById("quiz-container").prepend(finalGif); // Insere o GIF no início da div
