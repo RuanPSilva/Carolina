@@ -43,7 +43,7 @@ function checkAnswer(selected) {
         // Para a última pergunta, todas as alternativas são corretas
         document.getElementById("quiz-container").innerHTML = '<h2>Você acertou, todas as respostas estão corretas! 🎉</h2><p>🐈O Gatinho te entrega flores, porque vc é minha Abelinha que ama florzinhas!🐝</p>';
         const finalGif = document.createElement("img");
-        finalGif.src = "./Site_Carolina/src/video/Flor.gif";  // Inserindo o Gif
+        finalGif.src = "./Site_Carolina/src/video/Flor.gif;  // Inserindo o Gif
         finalGif.id = "final-gif";  // Estilo do GIF de finalização
         document.getElementById("quiz-container").prepend(finalGif); // Insere o GIF no início da div
     } else if (selected === questionData.correct) {
