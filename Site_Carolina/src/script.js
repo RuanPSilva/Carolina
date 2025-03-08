@@ -68,7 +68,7 @@ function checkAnswer(selected) {
     } else {
         // Se a resposta estiver errada, troca para o GIF de erro
         const errorGif = document.createElement("img");
-        errorGif.src = "./Site_Carolina/src/video/Gato.gif"; // Caminho do GIF de erro
+        errorGif.src = "./Site_Carolina/src/video/Zangado.gif"; // Caminho do GIF de erro
         errorGif.id = "error-gif"; // Definindo o ID para aplicar o estilo no CSS
         document.getElementById("quiz-container").innerHTML = '<h2>Como assim, tu esqueceu? 😱</h2><button onclick="restartQuiz()">Tentar de novo</button>';
         document.getElementById("quiz-container").prepend(errorGif); // Insere o GIF no início da div
