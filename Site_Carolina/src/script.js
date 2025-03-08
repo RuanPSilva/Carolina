@@ -43,7 +43,7 @@ function checkAnswer(selected) {
         // Para a última pergunta, todas as alternativas são corretas
         document.getElementById("quiz-container").innerHTML = '<h2>Você acertou, todas as respostas estão corretas! 🎉</h2><p>🐈O Gatinho te entrega flores, porque vc é minha Abelinha que ama florzinhas!🐝</p>';
         const finalGif = document.createElement("img");
-        finalGif.src = "./Site_Carol/src/video/Flor.gif";  // Inserindo o Gif
+        finalGif.src = "./Site_Carolina/src/video/Flor.gif";  // Inserindo o Gif
         finalGif.id = "final-gif";  // Estilo do GIF de finalização
         document.getElementById("quiz-container").prepend(finalGif); // Insere o GIF no início da div
     } else if (selected === questionData.correct) {
@@ -51,7 +51,7 @@ function checkAnswer(selected) {
         if (currentQuestion < quizData.length) {
             loadQuestion();
         } else {
-             document.getElementById("quiz-container").innerHTML = '<h2>Parabéns, Carolina! 🎉</h2><p>Você completou o quiz!</p></div>';
+            document.getElementById("quiz-container").innerHTML = '<h2>Parabéns, Carolina! 🎉</h2><p>Você completou o quiz!</p></div>';
             const finalGif = document.createElement("img");
             finalGif.src = "./Site_Carolina/src/video/Flor.gif";  // Substitua com o GIF de sua escolha
             finalGif.id = "final-gif";  // Estilo do GIF de finalização
@@ -66,7 +66,7 @@ function checkAnswer(selected) {
     } else {
         // Se a resposta estiver errada, troca para o GIF de erro
         const errorGif = document.createElement("img");
-        errorGif.src = "./Site_Carolina/src/video/Gato.gif"; // Caminho do GIF de erro
+        errorGif.src = "./Site_Carolina/src/video/Zangado.gif"; // Caminho do GIF de erro
         errorGif.id = "error-gif"; // Definindo o ID para aplicar o estilo no CSS
         document.getElementById("quiz-container").innerHTML = '<h2>Como assim, tu esqueceu? 😱</h2><button onclick="restartQuiz()">Tentar de novo</button>';
         document.getElementById("quiz-container").prepend(errorGif); // Insere o GIF no início da div
