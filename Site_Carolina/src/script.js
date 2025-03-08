@@ -1,8 +1,8 @@
 const quizData = [
-    { question: "Primeira vez que nos vimos?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) No ônibus", "B) Instagram", "C) Gincana"], correct: 2 },
-    { question: "Onde nos conhecemos? E a onde foi nossa primeira conversa?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Saída da Escola", "B) Instagram", "C) Sorveteria da Guaipá"], correct: 0 },
-    { question: "Como foi a sensação do primeiro beijo?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Até que enfim", "B)Ruim demais", "C)  Um susto"], correct: 2 },
-    { question: "Onde foi nosso primeiro date?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Shopping", "B) Restaurante", "C)Escola"], correct: 0 },
+    { question: "Primeira vez que nos vimos?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) No ônibus", "B) Gincana", "C) Instagram"], correct: 1 },
+    { question: "Onde nos conhecemos? E a onde foi nossa primeira conversa?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Instagram", "B) Saída da Escola", "C) Sorveteria da Guaipá"], correct: 1 },
+    { question: "Como foi a sensação do primeiro beijo?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Até que enfim", "B) Um susto", "C) Ruim demais"], correct: 1 },
+    { question: "Onde foi nosso primeiro date?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Escola", "B) Restaurante", "C)Shopping"], correct: 2 },
     { question: "Quando foi nosso primeiro date?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) 03/11/2018", "B) 14/02/2024", "C) 17/03/2024"], correct: 2 },
     { question: "Qual foi nosso último date?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Casa da tia", "B) Cinema", "C) Praia"], correct: 0 },
     { question: "Qual foi seu primeiro presente?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Polvinho", "B) Cartinha", "C) Salgados da cantina"], correct: 2 },
@@ -43,7 +43,7 @@ function checkAnswer(selected) {
         // Para a última pergunta, todas as alternativas são corretas
         document.getElementById("quiz-container").innerHTML = '<h2>Você acertou, todas as respostas estão corretas! 🎉</h2><p>🐈O Gatinho te entrega flores, porque vc é minha Abelinha que ama florzinhas!🐝</p>';
         const finalGif = document.createElement("img");
-        finalGif.src = "./Site_Carolina/src/video/Flor.gif;  // Inserindo o Gif
+        finalGif.src = "./src/video/Flor.gif";  // Substitua com o GIF de sua escolha
         finalGif.id = "final-gif";  // Estilo do GIF de finalização
         document.getElementById("quiz-container").prepend(finalGif); // Insere o GIF no início da div
     } else if (selected === questionData.correct) {
@@ -51,25 +51,25 @@ function checkAnswer(selected) {
         if (currentQuestion < quizData.length) {
             loadQuestion();
         } else {
-            document.getElementById("quiz-container").innerHTML = '<h2>Parabéns, Carolina! 🎉</h2><p>Você completou o quiz!</p></div>';
+            document.getElementById("quiz-container").innerHTML = '<h2>Parabéns, Carolina! 🎉</h2><p>Você completou o quiz!</p><div id="animacao-buque">💐</div>';
             const finalGif = document.createElement("img");
-            finalGif.src = "./Site_Carolina/src/video/Flor.gif";  // Substitua com o GIF de sua escolha
+            finalGif.src = "./src/img/final.png";  // Substitua com o GIF de sua escolha
             finalGif.id = "final-gif";  // Estilo do GIF de finalização
             document.getElementById("quiz-container").prepend(finalGif); // Insere o GIF no início da div
-            
+
             // Adicionando o botão de retorno para a página Init.html
             const returnButton = document.createElement("button");
             returnButton.textContent = "Voltar para o Início";
-            returnButton.onclick = () => window.location.href = 'index.html';  // Redireciona para Init.html
+            returnButton.onclick = () => window.location.href = 'Init.html';  // Redireciona para Init.html
             document.getElementById("quiz-container").appendChild(returnButton);
         }
     } else {
         // Se a resposta estiver errada, troca para o GIF de erro
         const errorGif = document.createElement("img");
-        errorGif.src = "./Site_Carolina/src/video/Zangado.gif"; // Caminho do GIF de erro
+        errorGif.src = "./Site_Carolina/src/video/Gato.gif"; // Caminho do GIF de erro
         errorGif.id = "error-gif"; // Definindo o ID para aplicar o estilo no CSS
         document.getElementById("quiz-container").innerHTML = '<h2>Como assim, tu esqueceu? 😱</h2><button onclick="restartQuiz()">Tentar de novo</button>';
         document.getElementById("quiz-container").prepend(errorGif); // Insere o GIF no início da div
     }
-
+   
 }
