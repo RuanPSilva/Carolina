@@ -31,7 +31,7 @@ function loadQuestion() {
 
 function restartQuiz() {
     currentQuestion = 0;
-    document.getElementById("quiz-container").innerHTML = '<img id="quiz-img" src="./src/video/Zangado.gif" alt="Imagem do Quiz"><p id="quiz-question"></p><div id="quiz-options"></div>';
+    document.getElementById("quiz-container").innerHTML = '<img id="quiz-img" src="./Site_Carolina/src/video/Zangado.gif" alt="Imagem do Quiz"><p id="quiz-question"></p><div id="quiz-options"></div>';
     loadQuestion();
 }
 
@@ -43,7 +43,7 @@ function checkAnswer(selected) {
         // Para a última pergunta, todas as alternativas são corretas
         document.getElementById("quiz-container").innerHTML = '<h2>Você acertou, todas as respostas estão corretas! 🎉</h2><p>🐈O Gatinho te entrega flores, porque vc é minha Abelinha que ama florzinhas!🐝</p>';
         const finalGif = document.createElement("img");
-        finalGif.src = "./src/video/Flor.gif";  // Substitua com o GIF de sua escolha
+        finalGif.src = "./Site_Carol/src/video/Flor.gif";  // Substitua com o GIF de sua escolha
         finalGif.id = "final-gif";  // Estilo do GIF de finalização
         document.getElementById("quiz-container").prepend(finalGif); // Insere o GIF no início da div
     } else if (selected === questionData.correct) {
@@ -53,20 +53,20 @@ function checkAnswer(selected) {
         } else {
             document.getElementById("quiz-container").innerHTML = '<h2>Parabéns, Carolina! 🎉</h2><p>Você completou o quiz!</p><div id="animacao-buque">💐</div>';
             const finalGif = document.createElement("img");
-            finalGif.src = "./src/video/Flor.gif";  // Substitua com o GIF de sua escolha
+            finalGif.src = "./Site_Carolina/src/video/Flor.gif";  // Substitua com o GIF de sua escolha
             finalGif.id = "final-gif";  // Estilo do GIF de finalização
             document.getElementById("quiz-container").prepend(finalGif); // Insere o GIF no início da div
 
             // Adicionando o botão de retorno para a página Init.html
             const returnButton = document.createElement("button");
             returnButton.textContent = "Voltar para o Início";
-            returnButton.onclick = () => window.location.href = 'Init.html';  // Redireciona para Init.html
+            returnButton.onclick = () => window.location.href = 'index.html';  // Redireciona para Init.html
             document.getElementById("quiz-container").appendChild(returnButton);
         }
     } else {
         // Se a resposta estiver errada, troca para o GIF de erro
         const errorGif = document.createElement("img");
-        errorGif.src = "./src/video/Zangado.gif"; // Caminho do GIF de erro
+        errorGif.src = "./Site_Carolina/src/video/Zangado.gif"; // Caminho do GIF de erro
         errorGif.id = "error-gif"; // Definindo o ID para aplicar o estilo no CSS
         document.getElementById("quiz-container").innerHTML = '<h2>Como assim, tu esqueceu? 😱</h2><button onclick="restartQuiz()">Tentar de novo</button>';
         document.getElementById("quiz-container").prepend(errorGif); // Insere o GIF no início da div
