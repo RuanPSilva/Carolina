@@ -1,14 +1,14 @@
 
 
 const quizData = [
-    { question: "Primeira vez que nos vimos?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) No ônibus", "B) Instagram", "C) Gincana"], correct: 1 },
-    { question: "Onde nos conhecemos? E a onde foi nossa primeira conversa?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Saída da Escola", "B) Na Praça da escola", "C) Sorveteria da Guaipá"], correct: 1 },
+    { question: "Primeira vez que nos vimos?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) No ônibus", "B) Instagram", "C) Gincana"], correct: 2 },
+    { question: "Onde nos conhecemos? E a onde foi nossa primeira conversa?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Saída da Escola", "B) Na Praça da escola", "C) Sorveteria da Guaipá"], correct: 0 },
     { question: "Como foi a sensação do primeiro beijo?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Até que enfim", "B) Um susto", "C) Ruim demais"], correct: 1 },
     { question: "Onde foi nosso primeiro date?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Escola", "B) Restaurante", "C)Shopping"], correct: 2 },
-    { question: "Quando foi nosso primeiro date?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) 17/03/2024", "B) 14/02/2024", "C) 03/11/2018"], correct: 2 },
-    { question: "Qual foi nosso último date?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Praia", "B) Cinema", "C) Casa da tia"], correct: 0 },
-    { question: "Qual foi seu primeiro presente?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Salgados da cantina", "B) Cartinha", "C) Polvinho"], correct: 2 },
-    { question: "Qual foi o seu último presente?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Minha Presença", "B) Colar", "C) Buquê de flores"], correct: 0 },
+    { question: "Quando foi nosso primeiro date?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) 17/03/2024", "B) 14/02/2024", "C) 03/11/2018"], correct: 0 },
+    { question: "Qual foi nosso último date?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Praia", "B) Cinema", "C) Casa da tia"], correct: 2 },
+    { question: "Qual foi seu primeiro presente?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Salgados da cantina", "B) Cartinha", "C) Polvinho"], correct: 0 },
+    { question: "Qual foi o seu último presente?", image: "./Site_Carolina/src/video/Gato.gif", options: ["A) Minha Presença", "B) Colar", "C) Buquê de flores"], correct: 2 },
     { question: "Por hoje é só Momo!", image: "./Site_Carolina/src/video/Confir.gif", options: ["A) Você", "B) Acertou", "C) tudinhoo!"], correct: 0, allCorrect: true }
 ];
 
